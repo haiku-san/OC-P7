@@ -1,6 +1,4 @@
-@use "main.scss";
-@use "utils/variables";
-
+@import "main.scss";
 
 
 /***********************************/
@@ -37,7 +35,7 @@ body{
   }
 }
 
-
+/*
 @media all and (max-width:variables.$mobile){
   body{
     >header{
@@ -105,3 +103,4 @@ body{
     }
   }
 }
+*/

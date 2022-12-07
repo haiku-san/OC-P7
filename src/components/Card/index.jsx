@@ -1,9 +1,9 @@
-import Context from '../../utils/Provider'
+import {Context} from '../../utils/Provider'
 import React, {useContext} from "react"
 import {Link} from "react-router-dom"
 
 export default function Card({data}) {
-    // let {string} = useContext(Context)
+    let {string} = useContext(Context)
 
     return (
         <div>
@@ -12,7 +12,7 @@ export default function Card({data}) {
             </Link>
             <h2>{data.title}</h2>
             
-            {/* {string} */}
+            {string}
         </div>
     )
 }

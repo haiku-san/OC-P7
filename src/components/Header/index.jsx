@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom"
 import logo from "../../assets/images/logo_kasa.png";
-import "../../assets/sass/style.css"
 
 export default function Header() {
     return (

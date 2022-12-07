@@ -1,8 +1,18 @@
-export default function Card() {
+import Context from '../../utils/Provider'
+import React, {useContext} from "react"
+import {Link} from "react-router-dom"
+
+export default function Card({data}) {
+    // let {string} = useContext(Context)
+
     return (
         <div>
-            <img src="#" alt="titre de la location" />
-            <h2>Titre de la location</h2>
+            <Link to={"post/" + data.id}>
+                <img src={data.cover} alt={data.title} />
+            </Link>
+            <h2>{data.title}</h2>
+            
+            {/* {string} */}
         </div>
     )
 }

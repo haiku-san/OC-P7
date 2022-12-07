@@ -6,16 +6,21 @@ import Header from './components/Header/index'
 import Footer from './components/Footer/index'
 import './assets/sass/index.scss';
 import Home from './pages/Home';
+import Provider from './utils/Provider'
+import Post from './pages/Post'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
-        <Routes>
-          <Route element={<Home />} path="/" />
-        </Routes>
-      <Footer />
+      <Provider>
+        <Header />
+          <Routes>
+            <Route element={<Home />} path="/" />
+            <Route element={<Post />} path="/post/:id" />
+          </Routes>
+        <Footer />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

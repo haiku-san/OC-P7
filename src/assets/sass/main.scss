@@ -1,0 +1,31 @@
+
+@use "utils/variables";
+@use "utils/functions";
+@use "utils/mixins";
+@use "utils/extensions";
+
+@use "themes/template";
+@use "themes/animations";
+
+@use "base/normalize";
+@use "base/base";
+@use "base/typography";
+// @import "./vendors/";
+
+@use "components/loaders";
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
+@use "components/jumbotrons";
+@use "components/lists";
+@use "components/navbars";
+@use "components/footers";
+
+@use "layouts/headers";
+@use "layouts/navs";
+@use "layouts/mains";
+@use "layouts/footers" as footers2;
+
+@use "pages/all";
+@use "pages/home";
+@use "pages/menus";

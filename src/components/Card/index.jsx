@@ -7,12 +7,12 @@ export default function Card({data}) {
 
     return (
         <div>
-            <Link to={"post/" + data.id}>
+            <Link to={"post/" + data.id} className="link">
                 <img src={data.cover} alt={data.title} />
             </Link>
             <h2>{data.title}</h2>
             
-            {string}
+            {/* {string} */}
         </div>
     )
 }

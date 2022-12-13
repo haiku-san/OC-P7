@@ -8,18 +8,21 @@ header {
   margin: 30px 80px;
 
   .logo {
-    width:10%;
+    width: 200px;
   }
 
   menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 15%;
+    justify-content: flex-end;
+    width: 100%;
     color: $red1;
-    // color: #FF6060;
     font-weight: 500;
+    >li {
+      margin: 0 40px;
+      font-size: 24px;
+    }
   }
 
 }

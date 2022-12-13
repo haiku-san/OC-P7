@@ -1,31 +1,31 @@
 
-@use "utils/variables";
-@use "utils/functions";
-@use "utils/mixins";
-@use "utils/extensions";
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/extensions";
 
-@use "themes/template";
-@use "themes/animations";
+@import "themes/template";
+@import "themes/animations";
 
-@use "base/normalize";
-@use "base/base";
-@use "base/typography";
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
 // @import "./vendors/";
 
-@use "components/loaders";
-@use "components/buttons";
-@use "components/cards";
-@use "components/forms";
-@use "components/jumbotrons";
-@use "components/lists";
-@use "components/navbars";
-@use "components/footers";
+@import "components/loaders";
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/jumbotrons";
+@import "components/lists";
+@import "components/navbars";
+@import "components/footers";
 
-@use "layouts/headers";
-@use "layouts/navs";
-@use "layouts/mains";
-@use "layouts/footers" as footers2;
+@import "layouts/headers";
+@import "layouts/navs";
+@import "layouts/mains";
+@import "layouts/footers";
 
-@use "pages/all";
-@use "pages/home";
-@use "pages/menus";
+@import "pages/all";
+@import "pages/home";
+@import "pages/menus";

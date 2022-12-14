@@ -1,16 +1,11 @@
 import { useParams } from "react-router-dom";
+import DropDown from "../components/DropDown";
 import data from '../utils/logements.json'
 
 
-export function findLocationById(data, locationId) {
-    // let foundLocation = Object.values(data).find(location => location.id === locationId);
-    let foundLocation;
-    for(let location of data) {
-        // console.log(location)
-        if(location.id === locationId) {
-            foundLocation = location;
-        }
-    }
+
+function findLocationById(data, locationId) {
+    let foundLocation = Object.values(data).find(location => location.id === locationId);
     return foundLocation;
 }
 
@@ -22,8 +17,7 @@ export default function Post() {
 
     return (
         <div>
-            {id}
-            {currentLocation.id}
+            <DropDown content={currentLocation.equipments} />
         </div>
     )
 }

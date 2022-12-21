@@ -18,7 +18,7 @@ export default function Post() {
     console.log(currentLocation)
 
     return (
-        <div>
+        <div className="postPage">
             <Carousel images={currentLocation.pictures} />
             <div className="location-informations">
                 <div className="location-informations__main">

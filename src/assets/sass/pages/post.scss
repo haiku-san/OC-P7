@@ -1,3 +1,9 @@
+/*  */
+
+div.postPage {
+    margin-bottom: 120px;
+}
+
 * {
     font-weight: 500;
 }
@@ -7,6 +13,7 @@ div.location-informations {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0px 80px;
     h1,
     h2 {
         color: #ff6060;
@@ -36,7 +43,6 @@ div.location-informations {
     &__main {
         display: flex;
         flex-direction: column;
-        margin: 0 30px;
     }
 
     &__secondary {
@@ -44,7 +50,6 @@ div.location-informations {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin: 0 30px;
         > div.location-informations__host {
             display: flex;
             justify-content: flex-end;

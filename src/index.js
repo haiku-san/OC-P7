@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Provider from './utils/Provider'
 import Post from './pages/Post'
 import PageNotFound from './pages/PageNotFound'
+import About from './pages/About'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -18,6 +19,7 @@ root.render(
                 <Routes>
                     <Route element={<Home />} path="/" />
                     <Route element={<Post />} path="/post/:id" />
+                    <Route element={<About />} path="/about" />
                     <Route element={<PageNotFound />} path="/page-not-found" />
                     <Route
                         element={<Navigate to="/page-not-found" />}

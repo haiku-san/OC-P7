@@ -1,0 +1,27 @@
+/* */
+
+.pageNotFound {
+    color: $red1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(90vh - 70px);
+    > div.pageNotFound__error-text {
+        > h1 {
+            font-size: 240px;
+            font-weight: 700;
+        }
+        > h2 {
+            font-size: 32px;
+        }
+    }
+    > .pageNotFound__link-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+}

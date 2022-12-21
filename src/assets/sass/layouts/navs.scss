@@ -5,7 +5,7 @@ nav.banner {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 30px 80px;
+    margin: $component-margin1;
 
     img.banner__image {
         width: 100%;
@@ -13,7 +13,7 @@ nav.banner {
         width: 100%;
         z-index: 0;
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: $border-radius2;
     }
     h1.banner_title {
         z-index: 2;
@@ -21,7 +21,7 @@ nav.banner {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: $white;
         font-weight: 500;
         font-size: 36px;
         width: 100%;
@@ -31,10 +31,10 @@ nav.banner {
         content: '';
         display: block;
         z-index: 1;
-        background-color: #000000;
+        background-color: $black;
         mix-blend-mode: darken;
         opacity: 0.3;
-        border-radius: 25px;
+        border-radius: $border-radius2;
         position: absolute;
         top: 0;
         left: 0;

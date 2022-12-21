@@ -16,7 +16,7 @@ div.location-informations {
     margin: 0px 80px;
     h1,
     h2 {
-        color: #ff6060;
+        color: $red1;
     }
 
     h1 {
@@ -31,10 +31,10 @@ div.location-informations {
         display: flex;
         justify-content: left;
         > li {
-            background-color: #ff6060;
-            color: white;
+            background-color: $red1;
+            color: $white;
             padding: 5px 20px;
-            border-radius: 10px;
+            border-radius: $border-radius1;
             margin-right: 10px;
             text-align: center;
             font-size: 12px;
@@ -65,7 +65,7 @@ div.location-informations {
                 right: 0px;
                 height: 60px;
                 width: 60px;
-                border-radius: 100%;
+                border-radius: $border-radius3;
                 overflow: hidden;
                 img {
                     object-fit: contain;

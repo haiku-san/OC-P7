@@ -1,4 +1,4 @@
-import background_mountains from "../../assets/images/Background_mountains_img.png"
+import background_mountains from '../../assets/images/Background_mountains_img.png'
 
 export default function Nav() {
     return (

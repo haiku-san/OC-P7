@@ -1,8 +1,8 @@
 /**/
-ul.ratingStars {
+ul.rating-stars {
     display: flex;
     justify-content: flex-end;
-    .starIcon {
+    .rating-stars__icon {
         height: 20px;
         width: auto;
         aspect-ratio: 1 / 1;

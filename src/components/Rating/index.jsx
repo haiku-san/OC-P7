@@ -4,13 +4,13 @@ import redStarIcon from '../../assets/images/star_rate-24px_red.png'
 function Rating({ rating }) {
     return (
         <div>
-            <ul className="ratingStars">
+            <ul className="rating-stars">
                 {[...Array(Number(rating))].map((star, i) => (
                     <li key={i}>
                         <img
                             src={redStarIcon}
                             alt="star icon"
-                            className="starIcon"
+                            className="rating-stars__icon"
                         />
                     </li>
                 ))}
@@ -19,7 +19,7 @@ function Rating({ rating }) {
                         <img
                             src={greyStarIcon}
                             alt="star icon"
-                            className="starIcon"
+                            className="rating-stars__icon"
                         />
                     </li>
                 ))}

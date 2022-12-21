@@ -3,9 +3,9 @@ import logo from '../../assets/images/logo_kasa_512w.png'
 
 export default function Header() {
     return (
-        <header>
-            <img src={logo} alt="Logo Kasa" className="logo" />
-            <menu>
+        <header className="header">
+            <img src={logo} alt="Logo Kasa" className="header__logo" />
+            <menu className="menu">
                 <li>
                     <Link to="#">Accueil</Link>
                 </li>

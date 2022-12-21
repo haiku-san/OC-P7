@@ -1,9 +1,9 @@
 /**/
-article {
+article.dropdown {
     margin: 30px;
     background-color: #f7f7f7;
     border-radius: 10px;
-    > div.topbar {
+    > div.dropdown__topbar {
         color: white;
         background-color: #ff6060;
         border-radius: 10px;
@@ -12,10 +12,10 @@ article {
         justify-content: space-between;
         align-items: center;
 
-        > img {
+        > img.dropdown__icon {
             height: 32px;
             width: 32px;
-            &.closed {
+            &--closed {
                 transform: rotateX(180deg);
             }
         }
@@ -25,7 +25,7 @@ article {
             cursor: pointer;
         }
     }
-    > div.content {
+    > div.dropdown__content {
         border-radius: 10px;
         padding: 10px 20px 20px 20px;
         color: #ff6060;
@@ -40,7 +40,7 @@ article {
     margin: 30px;
     border-radius: 25px;
 
-    img.carouselImage {
+    img.carousel__image {
         width: 100%;
         aspect-ratio: 3.5 / 1;
         height: auto;
@@ -48,7 +48,7 @@ article {
         border-radius: 25px;
     }
 
-    img.arrowButton {
+    img.carousel__button {
         position: absolute;
         top: 50%;
         padding: 10px 10px;
@@ -58,27 +58,26 @@ article {
         color: white;
         border: none;
         opacity: 0.8;
-    }
-
-    .previousButton {
-        left: 0px;
-        transform: translateY(-50%) rotate(-90deg);
-        &:hover {
-            cursor: pointer;
-            transform: translateY(-50%) rotate(-90deg) scale(1.2);
-            opacity: 1;
-            transition: all 0.2s;
+        &--previous {
+            left: 0px;
+            transform: translateY(-50%) rotate(-90deg);
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-50%) rotate(-90deg) scale(1.2);
+                opacity: 1;
+                transition: all 0.2s;
+            }
         }
-    }
 
-    .nextButton {
-        right: 0px;
-        transform: translateY(-50%) rotate(90deg);
-        &:hover {
-            cursor: pointer;
-            transform: translateY(-50%) rotate(90deg) scale(1.2);
-            opacity: 1;
-            transition: all 0.2s;
+        &--next {
+            right: 0px;
+            transform: translateY(-50%) rotate(90deg);
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-50%) rotate(90deg) scale(1.2);
+                opacity: 1;
+                transition: all 0.2s;
+            }
         }
     }
 }

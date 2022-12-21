@@ -20,20 +20,20 @@ export default function Post() {
     return (
         <div>
             <Carousel images={currentLocation.pictures} />
-            <div className="infos">
-                <div className="mainInfos">
+            <div className="location-informations">
+                <div className="location-informations__main">
                     <h1>{currentLocation.title}</h1>
                     <h2>{currentLocation.location}</h2>
-                    <ul className="tags">
+                    <ul className="location-informations__tags">
                         {currentLocation.tags.map((tag, i) => (
                             <li key={i}>{tag}</li>
                         ))}
                     </ul>
                 </div>
-                <div className="otherInfos">
-                    <div className="hostInfos">
+                <div className="location-informations__secondary">
+                    <div className="location-informations__host">
                         <h2>{currentLocation.host.name}</h2>
-                        <div className="croppedImage">
+                        <div className="location-informations__cropped-image">
                             {' '}
                             <img
                                 src={currentLocation.host.picture}

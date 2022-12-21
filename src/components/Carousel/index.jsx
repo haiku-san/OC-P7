@@ -19,18 +19,18 @@ export default function Carousel({ images }) {
             <img
                 src={images[currentImageIndex]}
                 alt="test"
-                className="carouselImage"
+                className="carousel__image"
             />
             <img
                 src={arrowIcon}
                 alt="Icône de flèche"
-                className="arrowButton previousButton"
+                className="carousel__button carousel__button--previous"
                 onClick={previousImage}
             />
             <img
                 src={arrowIcon}
                 alt="Icône de flèche"
-                className="arrowButton nextButton"
+                className="carousel__button carousel__button--next"
                 onClick={nextImage}
             />
         </div>

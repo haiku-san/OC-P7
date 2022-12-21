@@ -1,17 +1,17 @@
 /**/
 
-header {
+header.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 30px 80px 40px 80px;
 
-    .logo {
+    .header__logo {
         width: 150px;
     }
 
-    menu {
+    menu.menu {
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -2,7 +2,7 @@
     font-weight: 500;
 }
 
-div.infos {
+div.location-informations {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@ div.infos {
         font-size: 18px;
     }
 
-    ul.tags {
+    ul.location-informations__tags {
         display: flex;
         justify-content: left;
         > li {
@@ -33,20 +33,19 @@ div.infos {
             font-size: 12px;
         }
     }
-
-    div.mainInfos {
+    &__main {
         display: flex;
         flex-direction: column;
         margin: 30px;
     }
 
-    div.otherInfos {
+    &__secondary {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
         margin: 30px;
-        > div.hostInfos {
+        > div.location-informations__host {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -54,7 +53,7 @@ div.infos {
             > h2 {
                 line-break: loose;
             }
-            > div.croppedImage {
+            > div.location-informations__cropped-image {
                 margin-left: 10px;
                 right: 0px;
                 height: 40px;

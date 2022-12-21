@@ -1,16 +1,16 @@
 /**/
-footer {
+footer.footer {
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px;
-    >img {
+    > img.footer__logo {
         width: 100px;
         margin-bottom: 40px;
     }
-    >h3 {
+    > h3.footer__copyrigths {
         font-weight: 500;
         font-size: 24px;
         text-align: center;

@@ -1,5 +1,4 @@
 import Card from '../Card/index'
-// import data from '../../utils/logements.json'
 import { Context } from '../../utils/Provider'
 import React, { useContext } from 'react'
 
@@ -8,8 +7,7 @@ export default function CardsList() {
 
     console.log(data)
     return (
-        <section>
-            {/* <Card /> */}
+        <section className="cards-list">
             {data.map((card, i) => (
                 <Card data={card} key={i} />
             ))}

@@ -2,9 +2,13 @@ import background_mountains from '../../assets/images/Background_mountains_img.p
 
 export default function Nav() {
     return (
-        <nav>
-            <img src={background_mountains} alt="Paysage montagneux" />
-            <h1>Chez vous, partout et ailleurs</h1>
+        <nav className="banner">
+            <img
+                src={background_mountains}
+                alt="Paysage montagneux"
+                className="banner__image"
+            />
+            <h1 className="banner_title">Chez vous, partout et ailleurs</h1>
         </nav>
     )
 }

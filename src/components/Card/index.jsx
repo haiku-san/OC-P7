@@ -1,9 +1,9 @@
 import { Context } from '../../utils/Provider'
-import React, { useContext } from 'react'
+// import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Card({ data }) {
-    let { string } = useContext(Context)
+    // let { string } = useContext(Context)
 
     return (
         <div>

@@ -1,14 +1,10 @@
 /**/
-.starIcon {
-    height: 20px;
-    width: auto;
-    aspect-ratio: 1 / 1;
-}
-
-.redStarIcon {
-    color: red;
-}
-
-.greyStarIcon {
-    color: grey;
+ul.ratingStars {
+    display: flex;
+    justify-content: flex-end;
+    .starIcon {
+        height: 20px;
+        width: auto;
+        aspect-ratio: 1 / 1;
+    }
 }

@@ -4,7 +4,7 @@ import redStarIcon from '../../assets/images/star_rate-24px_red.png'
 function Rating({ rating }) {
     return (
         <div>
-            <ul>
+            <ul className="ratingStars">
                 {[...Array(Number(rating))].map((star, i) => (
                     <li key={i}>
                         <img

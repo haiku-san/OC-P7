@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import data from './utils/logements.json'
 import Header from './components/Header/index'
 import Footer from './components/Footer/index'
 import './assets/sass/index.scss'

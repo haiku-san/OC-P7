@@ -20,19 +20,35 @@ export default function Post() {
     return (
         <div>
             <Carousel images={currentLocation.pictures} />
-            <h1>{currentLocation.title}</h1>
-            <h2>{currentLocation.location}</h2>
-            <ul>
-                {currentLocation.tags.map((tag, i) => (
-                    <li key={i}>{tag}</li>
-                ))}
-            </ul>
-            <h2>{currentLocation.host.name}</h2>
-            <img
-                src={currentLocation.host.picture}
-                alt={'Photo de profil de ' + currentLocation.host.name}
-            />
-            <Rating rating={currentLocation.rating} />
+            <div className="infos">
+                <div className="mainInfos">
+                    <h1>{currentLocation.title}</h1>
+                    <h2>{currentLocation.location}</h2>
+                    <ul className="tags">
+                        {currentLocation.tags.map((tag, i) => (
+                            <li key={i}>{tag}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="otherInfos">
+                    <div className="hostInfos">
+                        <h2>{currentLocation.host.name}</h2>
+                        <div className="croppedImage">
+                            {' '}
+                            <img
+                                src={currentLocation.host.picture}
+                                alt={
+                                    'Photo de profil de ' +
+                                    currentLocation.host.name
+                                }
+                            />
+                        </div>
+                    </div>
+
+                    <Rating rating={currentLocation.rating} />
+                </div>
+            </div>
+
             <DropDown
                 title="Description"
                 content={currentLocation.description}

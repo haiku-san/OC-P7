@@ -100,6 +100,14 @@ article.dropdown {
             }
         }
     }
+    .carousel__index {
+        position: absolute;
+        bottom: 2%;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.536));
+    }
 }
 
 div.card {

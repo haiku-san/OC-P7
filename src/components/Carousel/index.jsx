@@ -33,6 +33,9 @@ export default function Carousel({ images }) {
                 className="carousel__button carousel__button--next"
                 onClick={nextImage}
             />
+            <p className="carousel__index">
+                {currentImageIndex + 1}/{images.length}
+            </p>
         </div>
     )
 }

@@ -36,7 +36,7 @@ div.location-informations {
     &__main {
         display: flex;
         flex-direction: column;
-        margin: 30px;
+        margin: 0 30px;
     }
 
     &__secondary {
@@ -44,7 +44,7 @@ div.location-informations {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin: 30px;
+        margin: 0 30px;
         > div.location-informations__host {
             display: flex;
             justify-content: flex-end;
@@ -52,12 +52,14 @@ div.location-informations {
             width: 100%;
             > h2 {
                 line-break: loose;
+                text-align: right;
+                width: 40%;
             }
             > div.location-informations__cropped-image {
-                margin-left: 10px;
+                margin-left: 20px;
                 right: 0px;
-                height: 40px;
-                width: 40px;
+                height: 60px;
+                width: 60px;
                 border-radius: 100%;
                 overflow: hidden;
                 img {

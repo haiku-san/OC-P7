@@ -48,15 +48,16 @@ export default function Post() {
                     <Rating rating={currentLocation.rating} />
                 </div>
             </div>
-
-            <DropDown
-                title="Description"
-                content={currentLocation.description}
-            />
-            <DropDown
-                title="Equipements"
-                content={currentLocation.equipments}
-            />
+            <div className="dropdowns-list">
+                <DropDown
+                    title="Description"
+                    content={currentLocation.description}
+                />
+                <DropDown
+                    title="Equipements"
+                    content={currentLocation.equipments}
+                />
+            </div>
         </div>
     )
 }

@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+
 import logo from '../../assets/images/logo_kasa_512w.png'
 
 export default function Header() {
+    const activeClassName = 'header__link--active'
     return (
         <header className="header">
             <Link to="/">
@@ -9,10 +11,24 @@ export default function Header() {
             </Link>
             <menu className="menu">
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? activeClassName : 'header__link'
+                        }
+                    >
+                        Accueil
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="#">A propos</Link>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive ? activeClassName : 'header__link'
+                        }
+                    >
+                        A propos
+                    </NavLink>
                 </li>
             </menu>
         </header>

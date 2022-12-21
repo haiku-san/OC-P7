@@ -11,24 +11,24 @@ export default function DropDown({ title, content }) {
     return (
         <article className="dropdown">
             <div className="dropdown__topbar" onClick={handleDropDown}>
-                <span className="dropdown__title">{title}</span>
-                {isOpen ? (
-                    <img
-                        src={arrowIcon}
-                        alt="Arrow icon"
-                        className="dropdown__icon"
-                    />
-                ) : (
-                    <img
-                        src={arrowIcon}
-                        alt="Arrow icon"
-                        className="dropdown__icon dropdown__icon--closed"
-                    />
-                )}
+                <div className="dropdown__topbar-background"></div>
+                <div className="dropdown__informations">
+                    <span className="dropdown__title">{title}</span>
+                    {isOpen ? (
+                        <img
+                            src={arrowIcon}
+                            alt="Arrow icon"
+                            className="dropdown__icon"
+                        />
+                    ) : (
+                        <img
+                            src={arrowIcon}
+                            alt="Arrow icon"
+                            className="dropdown__icon dropdown__icon--closed"
+                        />
+                    )}
+                </div>
             </div>
-            {/* {isOpen && <ul>
-                {content.map((element, i) => <li key={i}>{element}</li>)}
-            </ul>} */}
 
             {!isOpen && (
                 <div className="dropdown__content">

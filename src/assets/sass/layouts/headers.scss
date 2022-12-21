@@ -22,9 +22,11 @@ header.header {
         > li {
             margin: 0 40px;
             font-size: 18px;
+            > .header__link--active {
+                text-decoration: underline;
+            }
             &:hover {
                 transform: scale(1.1);
-                filter: drop-shadow(1px 0.5px 0px #f1f1f1);
                 transition: all 0.2s;
             }
         }

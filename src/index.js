@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header/index'
 import Footer from './components/Footer/index'
 import './assets/sass/index.scss'
 import Home from './pages/Home'
 import Provider from './utils/Provider'
 import Post from './pages/Post'
+import PageNotFound from './pages/PageNotFound'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -17,6 +18,11 @@ root.render(
                 <Routes>
                     <Route element={<Home />} path="/" />
                     <Route element={<Post />} path="/post/:id" />
+                    <Route element={<PageNotFound />} path="/page-not-found" />
+                    <Route
+                        element={<Navigate to="/page-not-found" />}
+                        path="*"
+                    />
                 </Routes>
                 <Footer />
             </Provider>

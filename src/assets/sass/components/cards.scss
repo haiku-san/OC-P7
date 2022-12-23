@@ -4,6 +4,11 @@ article.dropdown {
     background-color: $grey1;
     border-radius: $border-radius1;
     position: relative;
+    width: 100%;
+    @include mobile-and-tablette {
+        margin: $component-margin-mobile1;
+        width: calc(100% - $component-margin-mobile1 * 2);
+    }
     > div.dropdown__topbar {
         position: relative;
         div.dropdown__topbar-background {
@@ -59,7 +64,9 @@ article.dropdown {
     position: relative;
     margin: $component-margin1;
     border-radius: $border-radius2;
-
+    @include mobile-and-tablette {
+        margin: $component-margin-mobile1;
+    }
     img.carousel__image {
         width: 100%;
         aspect-ratio: 3.5 / 1;
@@ -170,6 +177,9 @@ div.card {
         font-size: 18px;
         user-select: none;
         pointer-events: none;
+        @include mobile-and-tablette {
+            width: 50%;
+        }
     }
     &:hover {
         transform: scale(1.05);
@@ -179,5 +189,10 @@ div.card {
             filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.318));
             transition: all 0.2s ease;
         }
+    }
+    @include mobile-and-tablette {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        margin: 20px 0;
     }
 }

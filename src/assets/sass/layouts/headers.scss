@@ -10,6 +10,10 @@ header.header {
 
     .header__logo {
         width: 150px;
+        @include mobile-and-tablette {
+            width: 80%;
+            // min-width: 50px;
+        }
     }
 
     menu.menu {
@@ -21,14 +25,45 @@ header.header {
         color: $red1;
         font-weight: 500;
         > li {
-            margin: 0 40px;
-            font-size: 18px;
             > .header__link--active {
                 text-decoration: underline;
             }
             &:hover {
                 transform: scale(1.1);
                 transition: all 0.2s;
+            }
+        }
+    }
+    @include from-desktop {
+        .menu {
+            > li {
+                margin: 0 40px;
+                font-size: 18px;
+            }
+        }
+    }
+    @include mobile-and-tablette {
+        margin: 20px;
+        .menu {
+            padding: 0;
+            width: 50px;
+            margin-left: 10px;
+            > li {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0;
+                margin-left: 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @include tablette-only {
+        .menu {
+            > li {
+                margin-left: 40px;
+                font-size: 22px;
             }
         }
     }

@@ -14,6 +14,11 @@ div.location-informations {
     justify-content: space-between;
     align-items: flex-start;
     margin: 0px 80px;
+    @include mobile-and-tablette {
+        margin: $component-margin-mobile1;
+        flex-direction: column;
+    }
+
     h1,
     h2 {
         color: $red1;
@@ -30,6 +35,9 @@ div.location-informations {
     ul.location-informations__tags {
         display: flex;
         justify-content: left;
+        @include mobile-and-tablette {
+            flex-wrap: wrap;
+        }
         > li {
             background-color: $red1;
             color: $white;
@@ -43,6 +51,9 @@ div.location-informations {
     &__main {
         display: flex;
         flex-direction: column;
+        @include mobile-and-tablette {
+            width: 100%;
+        }
     }
 
     &__secondary {
@@ -50,11 +61,30 @@ div.location-informations {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
+        @include mobile-and-tablette {
+            width: 100%;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul.rating-stars {
+            display: flex;
+            justify-content: flex-end;
+            .rating-stars__icon {
+                height: 40px;
+                width: auto;
+                aspect-ratio: 1 / 1;
+                @include mobile-and-tablette {
+                    height: 30px;
+                }
+            }
+        }
         > div.location-informations__host {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             width: 100%;
+
             > h2 {
                 line-break: loose;
                 text-align: right;
@@ -67,6 +97,10 @@ div.location-informations {
                 width: 60px;
                 border-radius: $border-radius3;
                 overflow: hidden;
+                @include mobile-and-tablette {
+                    height: 50px;
+                    width: 50px;
+                }
                 img {
                     object-fit: contain;
                 }

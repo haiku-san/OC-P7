@@ -4,7 +4,6 @@ article.dropdown {
     background-color: $grey1;
     border-radius: $border-radius1;
     position: relative;
-    width: 100%;
     @include mobile-and-tablette {
         margin: $component-margin-mobile1;
         width: calc(100% - $component-margin-mobile1 * 2);
@@ -64,6 +63,7 @@ article.dropdown {
     position: relative;
     margin: $component-margin1;
     border-radius: $border-radius2;
+
     @include mobile-and-tablette {
         margin: $component-margin-mobile1;
     }

@@ -25,6 +25,9 @@ div.dropdowns-list {
     justify-content: stretch;
     align-items: flex-start;
     width: 100%;
+    > .dropdown {
+        width: 100%;
+    }
     @include mobile-and-tablette {
         flex-direction: column;
         justify-content: flex-start;

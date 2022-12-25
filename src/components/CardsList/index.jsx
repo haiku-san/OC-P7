@@ -11,7 +11,6 @@ import React, { useContext } from 'react'
 export default function CardsList() {
     let { data } = useContext(Context)
 
-    console.log(data)
     return (
         <section className="cards-list">
             {data.map((card, i) => (

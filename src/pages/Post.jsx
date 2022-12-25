@@ -6,7 +6,7 @@ import data from '../utils/logements.json'
 import Carousel from '../components/Carousel/index'
 import Rating from '../components/Rating/index'
 
-// Création d'une fonction qui retrouve les infos de l'appartement dans le JSON à partir de son ID
+// * Création d'une fonction qui retrouve les infos de l'appartement dans le JSON à partir de son ID
 
 function findLocationById(data, locationId) {
     let foundLocation = Object.values(data).find(

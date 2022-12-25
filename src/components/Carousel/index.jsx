@@ -1,5 +1,15 @@
+// Import des dépendances
+
 import React, { useState } from 'react'
 import arrowIcon from '../../assets/images/arrow_back_ios-24px.svg'
+
+// * Création d'une fonction Carousel() qui récupère en props l'array contenant le lien des images à afficher
+// On utilise le hook useState pour définir un état "currentImageIndex"
+// qui prend en valeur un nombre entre 1 et le nombre total d'images à afficher
+
+// On ajoute des eventListeners sur les boutons suivant et précédent qui appellent des fonctions lorsque le bouton est actionné
+
+// Ces fonctions incrémente la variable "currentImageIndex" en ajoutant ou en retirant 1 de l'index
 
 export default function Carousel({ images }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)

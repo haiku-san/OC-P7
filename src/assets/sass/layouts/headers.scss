@@ -12,7 +12,6 @@ header.header {
         width: 150px;
         @include mobile-and-tablette {
             width: 80%;
-            // min-width: 50px;
         }
     }
 
@@ -63,7 +62,6 @@ header.header {
         .menu {
             > li {
                 margin-left: 40px;
-                font-size: 22px;
             }
         }
     }

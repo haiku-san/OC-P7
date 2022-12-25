@@ -1,7 +1,13 @@
+// Import des dépendances
+
 import React from 'react'
 import Nav from '../components/Nav'
 import DropDown from '../components/DropDown'
 import background_mountains_2 from '../assets/images/Background_mountains_2.png'
+
+// * Création d'une fonction About() qui affiche les informations à propos de l'entreprise :
+// - un composant <Nav /> qui prend en props l'image de fond
+// - 4 composants Dropdown qui prennent en props les titres et les textes à afficher
 
 function About() {
     return (

@@ -1,8 +1,12 @@
+// Import des dépendances
+
 import { useParams } from 'react-router-dom'
 import DropDown from '../components/DropDown'
 import data from '../utils/logements.json'
 import Carousel from '../components/Carousel/index'
 import Rating from '../components/Rating/index'
+
+// Création d'une fonction qui retrouve les infos de l'appartement dans le JSON à partir de son ID
 
 function findLocationById(data, locationId) {
     let foundLocation = Object.values(data).find(
@@ -11,11 +15,17 @@ function findLocationById(data, locationId) {
     return foundLocation
 }
 
+// * Création d'une fonction Post() qui récupère l'id de la page via l'URL
+// Qui appelle la fonction findLocationById() pour récupérer les informations de l'appartement
+// Puis affiche lesdites informations sur la page à l'aide de 3 composants dynamiques
+// qui récupérent les informations du logement et les passent en props :
+// * <Carousel />
+// * <Rating />
+// * <DropDown />
+
 export default function Post() {
     const { id } = useParams()
-    console.log(data)
     let currentLocation = findLocationById(data, id)
-    console.log(currentLocation)
 
     return (
         <div className="postPage">

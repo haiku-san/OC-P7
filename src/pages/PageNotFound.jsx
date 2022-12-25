@@ -1,5 +1,10 @@
+// Import des dépendances
+
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+// * Création d'une fonction Error() qui retourne un message : erreur 404
+// ainsi qu'un bouton pour revenir sur la page d'acceuil
 
 function Error() {
     return (

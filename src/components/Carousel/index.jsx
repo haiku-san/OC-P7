@@ -31,18 +31,23 @@ export default function Carousel({ images }) {
                 alt="test"
                 className="carousel__image"
             />
-            <img
-                src={arrowIcon}
-                alt="Icône de flèche"
-                className="carousel__button carousel__button--previous"
-                onClick={previousImage}
-            />
-            <img
-                src={arrowIcon}
-                alt="Icône de flèche"
-                className="carousel__button carousel__button--next"
-                onClick={nextImage}
-            />
+            {images.length > 1 && (
+                <img
+                    src={arrowIcon}
+                    alt="Icône de flèche"
+                    className="carousel__button carousel__button--previous"
+                    onClick={previousImage}
+                />
+            )}
+            {images.length > 1 && (
+                <img
+                    src={arrowIcon}
+                    alt="Icône de flèche"
+                    className="carousel__button carousel__button--next"
+                    onClick={nextImage}
+                />
+            )}
+
             <p className="carousel__index">
                 {currentImageIndex + 1}/{images.length}
             </p>

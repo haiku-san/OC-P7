@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import arrowIcon from '../../assets/images/arrow_back_ios-24px.svg'
 
 // * Création d'une fonction DropDown() qui prend en props le titre et le contenu du dropdown
-// On utilise le hook State pour créer un boolean isOpen qui est "true" par défaut
+// On utilise le hook State pour créer un boolean isOpen qui est "false" par défaut
 
 // On retourne le dropdown dans le DOM en rendant la partie supérieure cliquable
 // On ajoute un eventListener qui appelle la fonction handleDropDown() qui change l'état du boolean

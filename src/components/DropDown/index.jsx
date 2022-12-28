@@ -15,7 +15,7 @@ import arrowIcon from '../../assets/images/arrow_back_ios-24px.svg'
 // Si c'est un array, on l'affiche sous forme de liste, sinon on l'affiche tel quel en paragraphe
 
 export default function DropDown({ title, content }) {
-    let [isOpen, setIsOpen] = useState(true)
+    let [isOpen, setIsOpen] = useState(false)
 
     function handleDropDown() {
         setIsOpen(!isOpen)
@@ -43,7 +43,7 @@ export default function DropDown({ title, content }) {
                 </div>
             </div>
 
-            {!isOpen && (
+            {isOpen && (
                 <div className="dropdown__content">
                     {Array.isArray(content) ? (
                         <ul>

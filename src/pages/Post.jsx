@@ -1,6 +1,7 @@
 // Import des dépendances
 
-import { useParams } from 'react-router-dom'
+import React from 'react'
+import { useParams, Navigate } from 'react-router-dom'
 import DropDown from '../components/DropDown'
 import data from '../utils/logements.json'
 import Carousel from '../components/Carousel/index'
@@ -12,6 +13,7 @@ function findLocationById(data, locationId) {
     let foundLocation = Object.values(data).find(
         (location) => location.id === locationId
     )
+
     return foundLocation
 }
 
@@ -26,6 +28,10 @@ function findLocationById(data, locationId) {
 export default function Post() {
     const { id } = useParams()
     let currentLocation = findLocationById(data, id)
+
+    if (currentLocation === undefined) {
+        return <Navigate to="/page-not-found" />
+    }
 
     return (
         <div className="postPage">

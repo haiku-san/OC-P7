@@ -1,0 +1,40 @@
+/* */
+
+.pageNotFound {
+    color: $red1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(90vh - 70px);
+    @include mobile-and-tablette {
+        margin: $component-margin-mobile1;
+        justify-content: space-around;
+    }
+    > div.pageNotFound__error-text {
+        > h1 {
+            font-size: 240px;
+            font-weight: 700;
+            @include mobile-and-tablette {
+                font-size: 128px;
+            }
+        }
+        > h2 {
+            font-size: 32px;
+            @include mobile-and-tablette {
+                font-size: 18px;
+            }
+        }
+    }
+    > .pageNotFound__link-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        font-size: 16px;
+        text-decoration: underline;
+        @include mobile-and-tablette {
+            height: 20%;
+        }
+    }
+}

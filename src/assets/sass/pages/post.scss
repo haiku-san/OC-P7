@@ -1,0 +1,110 @@
+/*  */
+
+div.postPage {
+    margin-bottom: 120px;
+}
+
+* {
+    font-weight: 500;
+}
+
+div.location-informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 80px;
+    @include mobile-and-tablette {
+        margin: $component-margin-mobile1;
+        flex-direction: column;
+    }
+
+    h1,
+    h2 {
+        color: $red1;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    ul.location-informations__tags {
+        display: flex;
+        justify-content: left;
+        @include mobile-and-tablette {
+            flex-wrap: wrap;
+        }
+        > li {
+            background-color: $red1;
+            color: $white;
+            padding: 5px 20px;
+            border-radius: $border-radius1;
+            margin-right: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        @include mobile-and-tablette {
+            width: 100%;
+        }
+    }
+
+    &__secondary {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        @include mobile-and-tablette {
+            width: 100%;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul.rating-stars {
+            display: flex;
+            justify-content: flex-end;
+            .rating-stars__icon {
+                height: 40px;
+                width: auto;
+                aspect-ratio: 1 / 1;
+                @include mobile-and-tablette {
+                    height: 30px;
+                }
+            }
+        }
+        > div.location-informations__host {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
+            > h2 {
+                line-break: loose;
+                text-align: right;
+                width: 40%;
+            }
+            > div.location-informations__cropped-image {
+                margin-left: 20px;
+                right: 0px;
+                height: 60px;
+                width: 60px;
+                border-radius: $border-radius3;
+                overflow: hidden;
+                @include mobile-and-tablette {
+                    height: 50px;
+                    width: 50px;
+                }
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

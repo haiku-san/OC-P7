@@ -17,9 +17,9 @@ These instructions will get you a copy of the project up and running on your loc
 
     `git clone https://github.com/haiku-san/OC-P7.git`
 
-2 - Go to the "develop" branch
+2 - Go to the "main" branch
 
-    `git checkout develop`
+    `git checkout main`
 
 3 - Navigate to the project directory:
 
